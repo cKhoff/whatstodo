@@ -1,4 +1,12 @@
 # whatstodo
+## run the project in development environment
+1. be sure to have installed at least [docker](https://www.docker.com/products/docker-desktop)
+2. open a terminal and navigate to the root folder of the project
+
+    ```bash
+    docker-compose up
+    ```
+3. open the browser at [http://localhost:3000](http://localhost:3000)
 
 ## Environment setup
 
@@ -26,7 +34,17 @@
   - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
   - [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)
 
-### Not mandatory but essential for developing new stuff
 
-- NodeJS
+
+
+# Not mandatory but essential for developing new stuff
+
+#### NodeJS
   - [NodeJS](https://nodejs.org/en/) preferred _LTS_ (Long time Support)
+  - ##### Backend
+    - [NestJS](https://docs.nestjs.com/) A straight forward NodeJS Framework for building enterprise grading backends. Heavily inspired by Angular codingstyle
+
+    - NestCLI - CLI-tool for scaffolding nestjs backends
+      ```bash
+        npm i -g @nestjs/cli
+      ```

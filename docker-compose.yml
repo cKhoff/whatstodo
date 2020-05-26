@@ -1,0 +1,17 @@
+version: "3.5"
+
+services:
+    backend:
+      container_name: whatstodo_backend_container
+#      depends_on: 
+#        - database
+      build:
+        context: ./services/backend
+        target: development
+      env_file:
+        - ./services/backend/development.env
+      volumes:
+        - ./services/backend/src:/app/src
+      ports:
+        - 3000:3000
+      restart: always
