@@ -4,7 +4,7 @@
 
 ### Git
 
-- [Git](https://git-scm.com/downloads)
+- [Git](https://git-scm.com/downloads) -- [Explanation video by MIT](https://youtu.be/2sjqTHE0zok)
 
 ### Docker
 
