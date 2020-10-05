@@ -1,4 +1,3 @@
 sut:
-  build:
-        context: ./services/backend
+  build: ./services/backend/Dockerfile
   command: bash
