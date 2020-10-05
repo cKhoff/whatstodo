@@ -1,0 +1,4 @@
+sut:
+  build:
+        context: ./services/backend
+  command: bash
