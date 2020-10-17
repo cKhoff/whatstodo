@@ -10,14 +10,14 @@ RUN npm install
 
 
 # build development image
-FROM base as development
-COPY --from=dependencies /app/node_modules ./node_modules
-CMD npm run start:dev
+# FROM base as development
+# COPY --from=dependencies /app/node_modules ./node_modules
+# CMD npm run start:dev
 
 
 # build production image
-# FROM base as production
-# COPY --from=dependencies /app/node_modules ./node_modules
-# COPY src ./src
-# RUN npm run build
-# CMD npm run start:prod
+FROM base as production
+COPY --from=dependencies /app/node_modules ./node_modules
+COPY src ./src
+RUN npm run build
+CMD npm run start:prod
