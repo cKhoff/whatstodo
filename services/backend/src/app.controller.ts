@@ -12,6 +12,6 @@ export class AppController {
 
   @Get('/me')
   getMe(): string {
-    return 'this is sparta';
+    return 'this is sparta v2';
   }
 }
